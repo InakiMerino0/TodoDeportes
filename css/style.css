@@ -1,0 +1,33 @@
+*   {
+    margin: 0;
+    padding: 0;
+}
+
+/* Grid Servicio */
+
+.servicio__grid{
+    display: grid;
+    grid-template-areas: 'uno dos tres'
+                        'cuatro cinco seis';
+    justify-content: center;
+    gap: 2rem;
+}
+
+.servicio__item1{
+    grid-area: uno;
+}
+.servicio__item2{
+    grid-area: dos;
+}
+.servicio__item3{
+    grid-area: tres;
+}
+.servicio__item4{
+    grid-area: cuatro;
+}
+.servicio__item5{
+    grid-area: cinco;
+}
+.servicio__item6{
+    grid-area: seis;
+}
