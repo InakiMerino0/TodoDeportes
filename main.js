@@ -1,8 +1,4 @@
 
-
-
-/* let deporte = (tipo, pago, capacidad, precio) */
-
 class Deporte {
     constructor(tipo, pago, capacidad, precio) {
         this.tipo = tipo;
@@ -23,14 +19,16 @@ let productos = [padelWorld,siempre10,colzenneger,crossfit,tenisRapidas,palace]
 
 let valorCarrito = 0;
 let carrito = [];
-function carritoCompras (){
+function carritoAgregado (){
     const sumaCarrito = carrito.reduce((valorCarrito, carrito) => valorCarrito = carrito, 0)
 }
 
 const prodAgregado = document.querySelector(".btn")
-function agregarCarrito (){
-    prodAgregado.addEventListener("click",clickCarrito);
-    carrito.push(prodAgregado)
-    console.log(carrito)
-}
 
+prodAgregado.addEventListener("click",clickCarrito);
+
+function clickCarrito (){
+    let precioProducto = (productos[4].precio);
+    valorCarrito = valorCarrito + precioProducto;
+    carrito.push(prodAgregado); 
+}

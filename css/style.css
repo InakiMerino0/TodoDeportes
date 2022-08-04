@@ -3,6 +3,54 @@
     padding: 0;
 }
 
+/* Cover */
+
+.header__cover {
+    display: flex;
+    grid-area: cuatro;
+    height: 60vh;
+    background-image: url(../recursos/tarjetas/cover.jpg);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header__text{
+    background-color: rgb(166, 166, 166);
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.header__grid{
+    /* display: grid;
+    grid-template-areas: 'uno dos tres'; */
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 1rem;
+}
+
+.header__nav{
+    grid-area: dos;
+}
+
+.header__logo{
+    grid-area: uno;
+}
+
+.header__carrito{
+    width: 3rem;
+    grid-area: tres;
+}
+
+
+
+/* Modal carrito */
+
+
+
 /* Grid Servicio */
 
 .servicio__grid{

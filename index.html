@@ -9,26 +9,79 @@
     <title>Todo Deportes</title>
 </head>
 <body>
-    <header>
-        <div class="header__cover">
-            <h1>Todo Deportes</h1>
-            <p>Donde tu pasion por el deporte se hace realidad</p>
-            <img src="recursos/cover.jpg">
+<header>
+    <div class="header__grid">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="recursos/logo/logo19260.jpg"/>
+            </a>
         </div>
+        <div class="header__nav">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="paginas/about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="paginas/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="paginas/contacto.html">Contactanos</a>
+                            </li>
+                        </ul>
+                    </div>
+            </nav>
+        </div>
+        <div class="header__carrito">
+            <a href="paginas/carrito.html">
+                <img src="recursos/carrito.jpg"/>
+            </a>
+        </div>
+        <section class="modal__section">
+            <div class="modal__carrito">
+                <h2 class="modal__title">Carrito de Compras</h2>
+                <ul>
+
+                </ul>
+            </div>
+        </section>
+        <div class="modal__container">
+            <div class="modal modal__close">
+                <p class="modal__closeBtn">X</p>
+                <div class="modal__elementos">
+                    <h2>Carrito de Compras</h2>
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div class="header__cover">
+        <h1 class="header__text">Todo Deportes</h1>
+        <p class="header__text">Donde tu pasion por el deporte se hace realidad</p>
+    </div>
     </header>
     <main>
         <section>
             <article>
                 <p>Selecciona los servicios que desees, luego dirigete al carrito para comprar.</p>
                 <p>
-                    Desde TodoDeportes, creemos en que la clave de la motivacion en la actividad deportiva, se encuentra en las cosas pequenas, y que mejor
+                    Desde TodoDeportes, creemos en que la clave de la motivacion esta en la actividad deportiva, se encuentra en las cosas pequenas, y que mejor
                     motivacion que la de un alivio a tu bolsillo. Desde nuestra web, podras encontrar descuentos y promociones en todos los ambitos, te invitamos
                     a explorarlos haciendo <a href="...">click aqui</a>.          
                 </p>
             </article>
             <div class="servicio__grid">
                 <div class="card servicio__item1" style="width: 18rem;">
-                    <img src="recursos/al10.jpg" class="card-img-top" alt="Cancha de Futbol">
+                    <img src="recursos/tarjetas/al10.jpg" class="card-img-top" alt="Cancha de Futbol">
                     <div class="card-body">
                         <h5 class="card-title">Siempre Al 10</h5>
                         <p class="card-text">Canchas de futbol 5, 9 y 11. Unicas canchas de pasto natural en la zona. Chequea nuestro calendario para elegir tu horario</p>
@@ -36,7 +89,7 @@
                     </div>
                 </div>
                 <div class="card servicio__item2" style="width: 18rem;">
-                    <img src="recursos/bbuilding.jpg" class="card-img-top" alt="Pesas">
+                    <img src="recursos/tarjetas/bbuilding.jpg" class="card-img-top" alt="Pesas">
                     <div class="card-body">
                         <h5 class="card-title">Colzenegger Gym</h5>
                         <p class="card-text">Vivi la experiencia del gimnasio de elite en el culturismo, entrena junto a tus deportistas favoritos.</p>
@@ -44,7 +97,7 @@
                     </div>
                 </div>
                 <div class="card servicio__item3" style="width: 18rem;">
-                    <img src="recursos/crossfit.jpg" class="card-img-top" alt="Crossfit">
+                    <img src="recursos/tarjetas/crossfit.jpg" class="card-img-top" alt="Crossfit">
                     <div class="card-body">
                         <h5 class="card-title">X Gym</h5>
                         <p class="card-text">La actividad deportiva que cautiva a deportistas alrededor del mundo ya esta aqui, conoce el Crossfit, comenza hoy mismo.</p>
@@ -52,15 +105,15 @@
                     </div>
                 </div>
                 <div class="card servicio__item4" style="width: 18rem;">
-                    <img src="recursos/padelworld.jpg" class="card-img-top" alt="Paleta de padel">
-                    <div class="card-body">
+                    <img src="recursos/tarjetas/padelworld.jpg" class="card-img-top" alt="Paleta de padel">
+                    <div class="car'd-body">
                         <h5 class="card-title">Padel World</h5>
                         <p class="card-text">Canchas de padel para jugar con amigos, si no tenes rivales nosotros te los conseguimos en el momento.</p>
                         <input type="button" class="btn btn-primary">Agregar al carrito</input>
                     </div>
                 </div>
                 <div class="card servicio__item5" style="width: 18rem;">
-                    <img src="recursos/sportpalace.jpg" class="card-img-top" alt="Tennis Court">
+                    <img src="recursos/tarjetas/sportpalace.jpg" class="card-img-top" alt="Tennis Court">
                     <div class="card-body">
                         <h5 class="card-title">Sport Palace</h5>
                         <p class="card-text">Canchas de tenis de polvo de ladrillo, mantenimiento permanente, perfecto estado.</p>
@@ -68,7 +121,7 @@
                     </div>
                 </div>
                 <div class="card servicio__item6" style="width: 18rem;">
-                    <img src="recursos/tenisrapidas.jpg" class="card-img-top" alt="Fast Tennis Court">
+                    <img src="recursos/tarjetas/tenisrapidas.jpg" class="card-img-top" alt="Fast Tennis Court">
                     <div class="card-body">
                         <h5 class="card-title">Tenis Rapidas</h5>
                         <p class="card-text">Canchas rapidas de tennis, unicas en la zona, a precios muy accesibles.</p>
